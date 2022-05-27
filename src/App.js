@@ -1,11 +1,18 @@
 import "./App.css";
 // import About  from "./Components/About/About";
-import Hamburger  from "./Components/Hamburger/Hamburger";
+import Navbar from "./Components/Navbar/Navbar";
+import Header from './Components/Header/Header'
 
 function App() {
   return (
     <div className="App">
-      <Hamburger></Hamburger>
+
+      <Navbar />
+
+      <Header />
+
+
+
     </div>
   );
 }
