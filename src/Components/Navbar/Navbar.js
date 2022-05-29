@@ -3,6 +3,10 @@ import './Hamburger.scss'
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { FaMedium } from "@react-icons/all-files/fa/FaMedium";
+
+//Sidebar import
+import Sidebar from "../../Elements/Sidebar/Sidebar"
+
 // import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
 
 function Navbar() {
@@ -10,9 +14,10 @@ function Navbar() {
     <div className="navbar-main">
       <div className='hamburger-menu'>
         <div className='hamburger-menu__icon'>
+          {/* <span></span>
           <span></span>
-          <span></span>
-          <span></span>
+          <span></span> */}
+          <Sidebar />
         </div>
       </div>
       <div className='logo-main'>
