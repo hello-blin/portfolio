@@ -61,12 +61,12 @@ const Sidebare = () => {
                     <SidebarContent>
                         <Menu iconShape="square">
                             <MenuItem active={true} icon={<FiHome />}>
-                                Home
+                                <Link to="/">Home</Link>
                             </MenuItem>
                             <MenuItem icon={<SiAboutdotme />}><Link to="/about">  About</Link></MenuItem>
-                            <MenuItem icon={<SiRobotframework />}>Work</MenuItem>
-                            <MenuItem icon={<CgTimelapse />}>What Next?</MenuItem>
-                            <MenuItem icon={<CgSpinnerTwoAlt />}>Drop a line.</MenuItem>
+                            <MenuItem icon={<SiRobotframework />}><Link to="/work">  Work</Link></MenuItem>
+                            <MenuItem icon={<CgTimelapse />}><Link to="/what-next">  What Next?</Link></MenuItem>
+                            <MenuItem icon={<CgSpinnerTwoAlt />}><Link to="/contact">  Drop a Line.</Link></MenuItem>
                         </Menu>
                     </SidebarContent>
                 </ProSidebar>

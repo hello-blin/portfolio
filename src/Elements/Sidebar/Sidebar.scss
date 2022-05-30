@@ -1,6 +1,12 @@
 #header {
     position: absolute;
     width: 220px;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5em;
+    }
 }
 
 #header .pro-sidebar {
@@ -39,15 +45,30 @@
     overflow-y: hidden;
 }
 
+.logotext {
+    a {
+        text-decoration: none;
+    }
+
+
+}
+
+
+
 #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
-    font-size: 20px;
+    font-size: 1.4em;
     padding: 0 20px;
     color: #72ff8c;
     font-weight: bold;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #000;
-
     font-family: 'Strretch Sans';
+    text-decoration: none;
+
+    @media screen and(max-width: 512px) {
+        font-size: 39px;
+        padding: 0 10px;
+    }
 }
 
 #header .pro-sidebar-inner .pro-sidebar-layout ul {
