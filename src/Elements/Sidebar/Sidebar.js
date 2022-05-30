@@ -9,6 +9,7 @@ import {
     SidebarContent,
 } from "react-pro-sidebar";
 
+
 //import icons from react icons
 import { SiAboutdotme } from "react-icons/si";
 import { SiRobotframework } from "react-icons/si";
@@ -16,6 +17,9 @@ import { CgTimelapse } from "react-icons/cg";
 import { CgSpinnerTwoAlt } from "react-icons/cg";
 import { FiHome, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 
+
+//Import react-router
+import { Link } from 'react-router-dom'
 
 
 
@@ -43,7 +47,7 @@ const Sidebare = () => {
                     <SidebarHeader>
                         <div className="logotext">
                             {/* small and big change using menucollapse state */}
-                            <p>{menuCollapse ? "B" : "BLIN"}</p>
+                            <Link to="/home"><p>{menuCollapse ? "B" : "BLIN"}</p></Link>
                         </div>
                         <div className="closemenu" onClick={menuIconClick}>
                             {/* changing menu collapse icon on click */}
@@ -59,7 +63,7 @@ const Sidebare = () => {
                             <MenuItem active={true} icon={<FiHome />}>
                                 Home
                             </MenuItem>
-                            <MenuItem icon={<SiAboutdotme />}>About</MenuItem>
+                            <MenuItem icon={<SiAboutdotme />}><Link to="/about">  About</Link></MenuItem>
                             <MenuItem icon={<SiRobotframework />}>Work</MenuItem>
                             <MenuItem icon={<CgTimelapse />}>What Next?</MenuItem>
                             <MenuItem icon={<CgSpinnerTwoAlt />}>Drop a line.</MenuItem>

@@ -42,8 +42,11 @@
 #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
     font-size: 20px;
     padding: 0 20px;
-    color: #000;
+    color: #72ff8c;
     font-weight: bold;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #000;
+
     font-family: 'Strretch Sans';
 }
 
