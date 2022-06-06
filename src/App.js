@@ -1,13 +1,13 @@
 import "./App.css";
-// import About  from "./Components/About/About";
 
-import Sidebare from './Elements/Sidebar/Sidebar'
+//Import Pages Here
+import Home from './Pages/Home/Home'
+
 
 function App() {
   return (
     <div className="App">
-      <Sidebare />
-
+      <Home />
     </div>
   );
 }
