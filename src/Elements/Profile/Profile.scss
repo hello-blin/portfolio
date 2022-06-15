@@ -17,7 +17,7 @@
     @media screen and(max-width: 465px) {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
@@ -44,7 +44,7 @@
         font-size: 13em;
         height: 50px;
         color: white;
-        padding-left: 30px;
+
     }
 
     span {
